@@ -43,7 +43,6 @@ def lambda_handler(event, context):
         response = detect_text(bucket, key)
         textDetections = [text['DetectedText'] for text in response['TextDetections']]
 
-        print (textDetections)
         # Log text detected.
         # for text in textDetections:
         #    print (text)
